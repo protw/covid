@@ -1,0 +1,10 @@
+color: #eae7c1
+created: 20200521110904497
+icon: $:/plugins/boa/langswap/img/Eng.svg
+list: [[COVID-19: DATA REVIEW (DAILY UPDATE)]] [[When the pandemic ends?]] [[Realistic levels of infection and deaths]] [[Daily data of new confirmed cases]] [[COVID lethality estimate]] [[Pandemic end determination code]] [[Code for infected and deaths relative levels]] [[Code for presentation of new cases]] Content
+modified: 20200521112857976
+swap: Ukr
+tags: $:/tags/ViewTemplate
+title: Eng
+
+<<simple-navigation tag:Eng>>
