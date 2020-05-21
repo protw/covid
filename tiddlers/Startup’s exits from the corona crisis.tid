@@ -1,0 +1,65 @@
+created: 20200504060101039
+icon: $:/favicon.ico
+modified: 20200521043528380
+tags: 
+title: Startup’s exits from the corona crisis
+
+<$twitter type="shareButton" url="https://bit.ly/2Wsvnq6" text="Webinar: Startup’s exits from the corona crisis #COVID19 #NAUPROF"/>
+
+<div class="sh-multicol2">
+
+!! <<doc-svg $:/images/fa5/solid/compress-arrows-alt FireBrick>> ''Organiser:'' 
+:The Project Office of the National Aviation University, Kyiv, Ukraine (http://prof.nau.edu.ua)
+
+!! <<doc-svg $:/images/fa5/solid/microphone-alt FireBrick>> ''Speaker:''
+:The webinar will be held by [[Tal Catran|https://www.linkedin.com/in/talcatran/]], a prominent figure in the global innovation ecosystem, tech startups and entrepreneurship. He has founded 14 startup accelerators since 2012 in Israel and abroad.
+
+<div style="display:inline-block;margin-top:-15px;">
+
+!! <<doc-svg $:/images/fa5/regular/question-circle FireBrick>> ''Questions to be answered:''
+* What should startups focus on now?
+* What tech clusters are affected by Corona the most?
+* Can one still raise funds or deploy minimum viable product?
+* How can we harness the Digital transformation to our advantage?
+</div>
+
+!! <<doc-svg $:/images/fa5/regular/calendar-alt FireBrick>> ''When:''
+:May 19, 2020, 12:00 (Kyiv, UTC+3)
+
+!! <<doc-svg $:/images/fa5/solid/language FireBrick>> ''Language of the Webinar:''
+:English
+
+!! <<doc-svg $:/images/fa5/brands/youtube FireBrick>> ''Video announcement:''
+:https://youtube.com/watch?v=U3cYUIG-HU8
+
+!! <<doc-svg $:/images/fa5/regular/calendar-check FireBrick>> ''Registration:''
+: ~~You can register by following the link below. The number of participants is limited.~~
+
+<center><a href="" class="myButton" target="_blank"><<doc-svg $:/images/fa5/regular/calendar-check White>>  ''Thank to all registered to<br/>and attended the webinar''</a></center>
+</div>
+
+<style>
+.myButton {
+	box-shadow: 0px 10px 14px -7px #276873;
+	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+	background-color:#599bb3;
+	border-radius:19px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:16px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+	background-color:#408c99;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>

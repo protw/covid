@@ -1,0 +1,17 @@
+created: 20200503140947936
+icon: $:/favicon.ico
+modified: 20200508064144413
+revision: 0
+swap: COVID-19: DATA REVIEW (DAILY UPDATE)
+tags: Ukr
+title: COVID-19: ОГЛЯД ДАНИХ (ЩОДЕННЕ ОНОВЛЕННЯ)
+
+<$twitter type="shareButton" url="https://protw.github.io/covid/#COVID-19%3A%20ОГЛЯД%20ДАНИХ%20(ЩОДЕННЕ%20ОНОВЛЕННЯ)" text="#COVID19: Огляд даних, щоденне оновлення"/>
+
+<<image-card img:closed-rel-confirmed.gif width:264px align:left title:"Закриті-підтверджені" text:"<ul><li><$link to='Коли закінчується пандемія?' tooltip='Коли закінчується пандемія?'>Стаття</$link></li><li>[[Тільки GIF анімація|closed-rel-confirmed.gif]]</li><li>[[Код Octave|Pandemic end determination code]]</li></ul>" pos:"top">>
+
+<<image-card img:deaths-vs-infected.gif width:264px align:left title:"Смерті-інфіковані" text:"<ul><li><$link to='Реалістичні рівні інфекції та смертності' tooltip='Реалістичні рівні інфекції та смертності'>Стаття</$link></li><li>[[Тільки GIF анімація|deaths-vs-infected.gif]]</li><li>[[Код Octave|Code for infected and deaths relative levels]]</li></ul>" pos:"top">>
+
+<<image-card img:owid-covid-data.gif width:264px align:left title:"Щоденні нові випадки" text:"<ul><li><$link to='Щоденна динаміка нових виявлених випадків' tooltip='Щоденна динаміка нових виявлених випадків'>Стаття</$link></li><li>[[Тільки GIF анімація|owid-covid-data.gif]]</li><li>[[Код Octave|Code for presentation of new cases]]</li></ul>" pos:"top">>
+
+<<image-card img:excess-mortality.png width:264px align:left title:"Оцінка летальності COVID" text:"<ul><li><$link to='Оцінка летальності COVID' tooltip='Оцінка летальності COVID'>Стаття</$link></li><li>[[Ексес смертности|excess-mortality.png]]</li><li>[[Типи країн|two-countries-compared.png]]</li></ul>" pos:"top">>

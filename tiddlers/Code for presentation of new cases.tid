@@ -1,0 +1,112 @@
+created: 20200503081215524
+modified: 20200503153842532
+swap: Код для представлення нових випадків
+tags: Eng
+title: Code for presentation of new cases
+
+```matlab
+# CODE FOR ANALYSIS OF THE COVID-19 PANDEMIC 
+# Author: Olegh Bondarenko, https://protw.github.io/oleghbond
+# Date: 2020-05-03
+#
+# Coronavirus Source Data 
+# https://ourworldindata.org/coronavirus-source-data
+
+function covid3
+  pkg load io # for use 'xlsread'
+
+  fname = 'owid-covid-data';
+  xls_file = [fname '.xlsx'];
+  src_url = ['https://covid.ourworldindata.org/data/' xls_file];
+  mat_file = [fname '.mat'];
+  gif_file = [fname '.gif'];
+  png_dir = 'movie3\';
+  date0 = datenum('2020-01-01','yyyy-mm-dd');
+
+  TO_UPDATE_DATA = 0;
+  
+  tic
+  if TO_UPDATE_DATA
+    disp('DOWNLOAD DATA')
+    disp(['FROM: ' src_url])
+    disp(['TO: ' xls_file])
+    [f, success, message] = urlwrite(src_url, xls_file);
+    toc
+    
+    disp(['READ ' xls_file])
+    [numarr, txtarr, ~, limits] = xlsread (xls_file);
+    toc
+    
+    disp('FORM DATA STRUCTURE')
+    datec = [];
+    for i = 2:size(txtarr,1)
+      datec = [datec; datenum(txtarr{i,3},'yyyy-mm-dd') - date0];
+    endfor
+    dat.date = datec;
+    dat.country3 = txtarr(2:end,1);
+    dat.country = txtarr(2:end,2);
+    for i = limits.numlimits(1,1):limits.numlimits(1,2)
+      dat.(txtarr{1,i}) = numarr(:,i+1-limits.numlimits(1,1));
+    endfor
+    save(mat_file,'dat')
+  else
+    disp(['LOAD ' mat_file])
+    load(mat_file)
+  endif
+  toc
+  
+  cntr = {'World' 'Ukraine' 'United States' 'Italy' 'Germany' ...
+    'Poland' 'Sweden' 'Iran' 'Russia' 'Japan' 'South Korea'};
+
+  for i = 1:length(cntr)
+    plot_country(dat,cntr,i,date0)
+    printf('PRINTING PNG # %d %s\n',i,cntr{i})
+    fig_file = [png_dir sprintf('%03d',i) '.png'];
+    print(fig_file)
+  endfor
+  toc
+  disp('COMPOSING THE GIF')
+  system(['magick -delay 100 -loop 2 ' png_dir '*.png ' gif_file]);
+  disp('DONE!')
+  toc
+
+  1;
+endfunction
+
+function plot_country(dat,cntr,i,date0)
+  if i == 1
+    clf
+  else
+    hold on
+  endif
+  
+  cntr1 = cntr{i};
+  
+  idx = find(strcmp(dat.country,cntr1));
+  x = dat.date(idx);
+  y = dat.new_cases_per_million(idx)/1e6*100;
+  idx1 = find(!isnan(y) & y != 0 & x > 80);
+  if isempty(idx1)
+    return;
+  end
+  
+  x = x(idx1);
+  y = y(idx1);
+  
+  semilogy(x,y,'-o')
+  title('COVID-19: New daily cases in % of the population')
+  xlabel('Day, since 1.1.2020')
+  ylabel('New daily cases, % of population')
+  text(x(end),y(end),cntr1)
+  set(gca,'ylim',[1e-5 2e-2])
+  grid on
+
+  if i > 1
+    hold off
+    if i == length(cntr)
+      legend(cntr,'location','northwest')
+      legend boxoff
+    endif
+  endif
+endfunction
+```

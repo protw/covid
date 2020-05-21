@@ -1,0 +1,19 @@
+created: 20200503083222350
+modified: 20200503132819714
+swap: Щоденна динаміка нових виявлених випадків
+tags: Eng
+title: Daily data of new confirmed cases
+
+<$twitter type="shareButton" url="https://protw.github.io/covid/#Daily%20data%20of%20new%20confirmed%20cases" text="Daily Dynamics of Newly Identified Cases #COVID19"/>
+
+The other day I discovered a new resource for myself https://ourworldindata.org/coronavirus-source-data.
+
+In addition to the daily dynamics of the COVID-19, it also stores preliminary data collected. This makes possible analyzing information with less effort.
+
+In particular, using the https://covid.ourworldindata.org/data/owid-covid-data.xlsx table, I have built a daily dynamic of newly conformed cases for a dozen countries and for the world at large. For comparability, the data are given as a percentage of the population of the country.
+
+<<image-basic owid-covid-data.gif width:90% align:center>>
+
+As with any statistic, these data must be handled with care. In addition to validity issues, the intensity of testing, which is country-specific, will play a role here. However, the trends identified can be quite illustrative.
+
+As in the previous articles, a working code is attached here: [[Code for presentation of new cases]].

@@ -1,0 +1,69 @@
+created: 20200507203436731
+modified: 20200507204120948
+swap: Оцінка летальності COVID
+tags: Eng
+title: COVID lethality estimate
+
+<$twitter type="shareButton" url="https://protw.github.io/covid/#COVID%20lethality%20estimate" text="Realistic #COVID19 lethality estimate #NAUPROF"/>
+
+The discussion that took place in the FB group //Ukrainian Scientists Worldwide// on mortality and morbidity of #COVID19 (https://bit.ly/2YJ5562) turned out to be productive - these estimates were obtained by another independent method, less susceptible to various biases.
+
+First, thanks to @Stepan Apunevych, it was obtained information about the project //~EuroMOMO// (https://www.euromomo.eu/), which is based on weekly statistics of civil status of individuals - the number of deaths without analyzing the causes of death. This information is least influenced by politicians and evaluative judgments (at least in civilized countries) primarily because of its legal significance.
+
+<<image-basic excess-mortality.png width:45% align:right caption:"Figure 1. Excess of mortality over the expected level <br/> in absolute values for the week">>
+
+The project //~EuroMOMO// is supported by 20 European countries, namely: Austria, Belgium, Great Britain, Greece, Denmark, Estonia, Ireland, Spain, Italy, Luxembourg, Malta, the Netherlands, Germany (Berlin + Hesse), Norway, Portugal, Hungary, Finland, France, Sweden, Switzerland.
+
+Graphs //Excess mortality// was found at the site. The graphs show the weekly excess of the mortality (excess of the mortality over the expected level in absolute values, weekly) in the //~EuroMOMO// partner countries, which provide data for the recent years, for all age groups separately and in total.
+
+Analyzing this graph for all age groups, it becomes clear that the of the peak of increased mortality begins in the 11th week of 2020. The peak has passed its maximum in 14th and 15th weeks. As of May 7, 2020, the graph ends at 17th week of 2020. During the period from 11th to 17th weeks of 2020 (7 weeks) the excess of deaths $$\sum_i D^i$$ amounted to about 135 thousand.
+
+In fact, and this is very significant, all the represented here countries (regions) are very clearly divided into those, in which this peak is obviously observed, and those, in which this peak is completely absent (see Figure 2). The only country in doubt is Portugal. But this does not affect the conclusions.
+
+<<image-basic two-countries-compared.png width:85% align:center caption:"Figure 2. Graphs of the weekly z-score at the national level in the ~EuroMOMO member countries. Two different typical cases are presented: Austria - no excess, Belgium - the obvious excess peak.">>
+
+The list of affected countries that clearly demonstrate the presence of this peak can be surely narrowed to 9 (out of 20 participating in the project), namely: Belgium, Great Britain, Spain, Italy, the Netherlands, Portugal, France, Switzerland, Sweden. The population of these countries $$\sum_i P^i$$ is about 287.5 million.
+
+Thus, the ratio of excess mortality relatively to the total population $$D_{tot}$$ of the 9 affected countries is:
+
+$$
+D_{tot} = \frac {\sum_i D^i} {\sum_i P^i} = \frac{135 \cdot 10^3}{287.5 \cdot 10^6} \cdot 100 = 0.05\%. 
+$$
+
+This mortality rate of <<mono 0.05%>> may be caused primarily due to COVID-19. However, participants of the discussion note that the influence of other factors, such as deaths due to failure to receive timely medical care due to overload of the health care systems of the affected countries, is not excluded.
+
+Using data on specific values (per 1 million of population), namely: the number of confirmed infections $$I_{cr} = I_c/P$$ and tests performed $$T_r = T/P$$ from the source [[worldometers|https://www.worldometers.info/coronavirus/]] it is possible to estimate the part of the infected population $$I_r$$ for each country as follows:
+
+$$
+I_r = I_{cr}/T_r
+$$
+
+Therefore, the total part of infected $$I_{tot}$$ can be calculated as follows:
+
+$$
+I_{tot} = \frac{\sum_i P^i I^i_{cr}} {\sum_i P^i}
+$$
+
+where $$P^i$$ - the population of $$i$$-th country, $$ I^i_{cr}$$ - the part of the infected in the country.
+
+|table-striped-row w-75 table-center|k
+|!Region / territory|!Population (July 1, 2017)|!Infected population $$I_r$$, %|!Total per 1 million of population|<|!Infected population $$PI_r$$|
+|~|~|~|!Confirmed cases|!Tests|~|
+|^Belgium|^ 10 574 595|^ 10% |^ 4 437 |^42 566|^ 1 102 276|
+|^Great Britain|^ 61 600 835|^ 14% |^ 2 962 |^21 330|^ 8 554 228|
+|^Spain|^ 46 061 274|^ 13% |^ 5 494 |^41 332|^ 6 122 632|
+|^Italy|^ 60 051 711|^ 9% |^ 3 547 |^38 221|^ 5 572 942|
+|^The Nederlands|^ 16 518 199|^ 14% |^ 2 962 |^21 330|^ 2 293 807|
+|^Portugal|^ 10 709 995|^ 5% |^ 2 620 |^47 655|^ 588 819|
+|^France|^ 65 165 983|^ 16% |^ 2 669 |^16 856|^ 10 318 463|
+|^Switzerland|^ 7 507 000|^ 10% |^ 3 481 |^33 550|^ 778 893|
+|^Sweden|^ 9 290 113|^ 17% |^ 2 438 |^14 704|^ 1 540 349|
+|^''TOTAL''|^ ''287 479 705''|^ ''13%'' |^||^ ''36 872 410''|
+
+Given the assessment of the COVID-19 the total infected portion of the population for these countries $$I_{tot}=13\%$$ ([[Realistic levels of infection and deaths]]), the ratio of excess mortality to the total number of infected (what can be denoted by the term "lethality" $$L_{tot}$$) in the population of the 9 affected countries will be:
+
+$$
+L_{tot} = D_{tot}/I_{tot} = 0.05\%/0.13 = 0.38\%.
+$$
+
+<style>td {min-width: 90px;}</style>
