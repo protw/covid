@@ -1,6 +1,6 @@
 created: 20200504060101039
 icon: $:/favicon.ico
-modified: 20200521043528380
+modified: 20200610092617590
 tags: 
 title: Startup’s exits from the corona crisis
 
@@ -29,13 +29,14 @@ title: Startup’s exits from the corona crisis
 !! <<doc-svg $:/images/fa5/solid/language FireBrick>> ''Language of the Webinar:''
 :English
 
-!! <<doc-svg $:/images/fa5/brands/youtube FireBrick>> ''Video announcement:''
-:https://youtube.com/watch?v=U3cYUIG-HU8
+!! <<doc-svg $:/images/fa5/brands/youtube FireBrick>> ''Video:''
+:<<doc-svg $:/images/fa5/brands/youtube FireBrick>> [[Announcement|https://youtube.com/watch?v=U3cYUIG-HU8]]
+:<<doc-svg $:/images/fa5/brands/youtube FireBrick>> ''[[Webinar broadcasting|https://youtube.com/watch?v=R8SJbRqInCQ]]''
 
 !! <<doc-svg $:/images/fa5/regular/calendar-check FireBrick>> ''Registration:''
 : ~~You can register by following the link below. The number of participants is limited.~~
 
-<center><a href="" class="myButton" target="_blank"><<doc-svg $:/images/fa5/regular/calendar-check White>>  ''Thank to all registered to<br/>and attended the webinar''</a></center>
+<center><a href="https://youtube.com/watch?v=R8SJbRqInCQ" class="myButton" target="_blank"><<doc-svg $:/images/fa5/regular/calendar-check White>>  ''Thank to all registered to<br/>and attended the webinar''</a></center>
 </div>
 
 <style>
