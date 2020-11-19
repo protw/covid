@@ -1,12 +1,14 @@
 created: 20200503073452833
 icon: $:/favicon.ico
-modified: 20200508063835778
+modified: 20201119080535012
 revision: 0
 swap: COVID-19: ОГЛЯД ДАНИХ (ЩОДЕННЕ ОНОВЛЕННЯ)
 tags: Eng
 title: COVID-19: DATA REVIEW (DAILY UPDATE)
 
 <$twitter type="shareButton" url="https://protw.github.io/covid/#COVID-19%3A%20DATA%20REVIEW%20(DAILY%20UPDATE)" text="#COVID19: Data review, daily update"/>
+
+<<image-card img:covid.jpg width:264px align:left title:"That's a marathon" text:"<ul><li><$link to='That is a marathon' tooltip='When the pandemic ends?'>Article</$link></li></ul>" pos:"top">>
 
 <<image-card img:closed-rel-confirmed.gif width:264px align:left title:"Closed vs confirmed" text:"<ul><li><$link to='When the pandemic ends?' tooltip='When the pandemic ends?'>Article</$link></li><li>[[GIF animation only|closed-rel-confirmed.gif]]</li><li>[[Octave code|Pandemic end determination code]]</li></ul>" pos:"top">>
 
